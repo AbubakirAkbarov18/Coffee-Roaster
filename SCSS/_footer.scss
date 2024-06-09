@@ -1,0 +1,49 @@
+:root {
+    --MainFontFirst: 'Barlow', sans-serif, 'Roboto', sans-serif;
+    --MainFontSecond: 'Fraunces', serif;
+    --typeofwhite: #FEFCF7;
+    --typeofblue: #333D4B;
+}
+
+footer {
+    background: #2C343E;
+}
+
+.footer__wrapper {
+    padding: 53px 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+.footer__links {
+    display: flex;
+    align-items: center;
+    gap: 0px 103px;
+
+    .footer--list {
+        margin-top: 7px;
+
+        .footer--link {
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.medias {
+    display: flex;
+    align-items: center;
+    gap: 0px 28px;
+
+    i{
+        color: #fff;
+        font-size: 24px;
+    }
+
+    i:hover{
+        color: #fdd6ba;
+    }
+}

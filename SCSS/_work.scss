@@ -1,0 +1,118 @@
+:root {
+    --MainFontFirst: 'Barlow', sans-serif, 'Roboto', sans-serif;
+    --MainFontSecond: 'Fraunces', serif;
+    --typeofwhite: #FEFCF7;
+    --typeofblue: #333D4B;
+}
+
+.work__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 80px 0px;
+    margin-bottom: 203px;
+    user-select: none;
+
+    &:hover > .work__line{
+        width: 100%;
+    }
+
+    .work__head {
+        color: #83888F;
+        font-family: var(--MainFontSecond);
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 32px;
+    }
+
+    .work__line{
+        align-self: center;
+        transition: 1s;
+        width: 20%;
+        height: 2px;
+        background-color: #fdd6ba;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        img{
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .work__btn{
+        transform: scale(1);
+        transition: 0.3s;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+
+        &:active{
+            transform: scale(1);
+        }
+    }
+}
+
+.work__cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.work__card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0px;
+    max-width: 345px;
+    overflow: hidden;
+
+    &:hover > .info__head{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+    &:hover > .info__text{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    &:hover > .digit{
+        transform: translateX(0px);
+    }
+
+    .digit {
+        transition: 1s;
+        color: #FDD6BA;
+        font-family: var(--MainFontSecond);
+        font-size: 72px;
+        font-weight: 900;
+        line-height: 72px;
+        max-width: 110px;
+        transform: translateX(130px);
+    }
+
+    .info__head {
+        transition: 0.7s;
+        color: var(--typeofblue);
+        font-family: var(--MainFontSecond);
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 36px;
+        max-width: 209px;
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    .info__text {
+        transition: 0.5s;
+        color: var(--typeofblue);
+        font-family: var(--MainFontFirst);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        max-width: 345px;
+        transform: translateY(100px);
+        opacity: 0;
+    }
+}
